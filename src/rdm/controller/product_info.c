@@ -50,6 +50,8 @@ size_t rdm_send_get_software_version_label(dmx_port_t dmx_num,
   const char *format = "a$";
   return rdm_send_request(dmx_num, &request, format, software_version_label,
                           size, ack);
+}
+
 
 size_t rdm_send_get_manufacturer_label(dmx_port_t dmx_num,
                                            const rdm_uid_t *dest_uid,
